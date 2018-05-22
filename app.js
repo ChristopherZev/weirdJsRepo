@@ -70,12 +70,24 @@ if(a===b){
   console.log('Nope, not equal');
 }*/
 /*-----------------------------------------------------------*/
-/*Existance and booleans example */
-//Coercion to check for existance 
+/*Existance and booleans example
+//Coercion to check for existance
 var a;
 //goes to internet and looks for a value
 a = 0;
 
 if(a || a===0){
   console.log('Something is there');
+}*/
+/*-----------------------------------------------------------*/
+/*Default values example*/
+function greet(name) {
+  // in the or name is set to undefined by execution context, name is
+  //Then coerece to false, the other side of the or the "string" is coereced
+  // to true leading name = true, So if a parameter is passed like greet('Chris')
+  // then it will output the parameter, if not the default value 
+  name = name || '<Default value,Name here>'
+  console.log('Hello ' + name);
 }
+greet('Chris');
+greet();
