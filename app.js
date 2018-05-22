@@ -36,9 +36,9 @@ var myVar2 = 99;
 a();
 */
 /*-----------------------------------------------------------*/
-/*Async Exmaple, Event Queue */
+/*Async Example, Event Queue */
 //long running function
-function wait3sec(){
+/*function wait3sec(){
   var ms = 3000 + new Date().getTime();
   while(new Date() < ms){}
   console.log('finished function');
@@ -50,4 +50,22 @@ function clickHandler() {
 document.addEventListener('click',clickHandler);
 
 wait3sec();
-console.log('finished exeution');
+console.log('finished exeution');*/
+
+/*-----------------------------------------------------------*/
+/*Operators Coercion example */
+/*var a = 1 + '2';
+console.log(a);
+
+console.log(1<2<3);
+//vs   both are true
+console.log(3<2<1);
+*/
+var a = 0;
+var b = false;
+//With == it will be equal, with === it will not
+if(a==b){
+  console.log('They are equal!');
+} else {
+  console.log('Nope, not equal');
+}
