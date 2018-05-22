@@ -60,12 +60,22 @@ console.log(a);
 console.log(1<2<3);
 //vs   both are true
 console.log(3<2<1);
-*/
+
 var a = 0;
 var b = false;
 //With == it will be equal, with === it will not
-if(a==b){
+if(a===b){
   console.log('They are equal!');
 } else {
   console.log('Nope, not equal');
+}*/
+/*-----------------------------------------------------------*/
+/*Existance and booleans example */
+//Coercion to check for existance 
+var a;
+//goes to internet and looks for a value
+a = 0;
+
+if(a || a===0){
+  console.log('Something is there');
 }
