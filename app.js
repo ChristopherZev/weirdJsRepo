@@ -91,4 +91,26 @@ function greet(name) {
 }
 greet('Chris');
 greet();*/
-console.log(libName);
+/*-----------------------------------------------------------*/
+/*Lib and framework collision example
+console.log(libName);*/
+
+var person = new Object();
+person["firstname"] = "Chris";
+person["lastname"] = "Zev";
+
+var firstNameProp = "firstname";
+console.log(person);
+console.log(person[firstNameProp]);
+
+console.log(person.firstname);
+console.log(person.lastname);
+
+person.food = new Object();
+person.food.country = "Japan";
+person.food.type = "Fish";
+person.food.name = "Sushi";
+
+//You can call like:
+console.log(person.food.country);
+console.log(person["food"]["country"]);
