@@ -187,10 +187,33 @@ var jsonValue = JSON.parse('{"firstname": "Chris","isACoder": true }');
   console.log(jsonValue);*/
 
   /*-----------------------------------------------------------*/
-  /*Functions are objects in JS example*/
+  /*First Class functions: Functions are objects in JS example
   function greet() {
     console.log('Hi');
   }
   greet.lang = 'English';//adds a prop to a func
   console.log(greet);//outputs the func itself
-  console.log(greet.lang);//outputs the prop value
+  console.log(greet.lang);//outputs the prop value*/
+
+  /*-----------------------------------------------------------*/
+  /*Function statement/expressions in JS example*/
+//function statement
+greet();
+function greet() {
+  console.log('hi I have a name');
+}
+//function expresssion because it return a function object, does not hoist
+var anonymousGreet = function() {
+  console.log('hi I am anonymous');
+}
+anonymousGreet();
+
+function log(a) {
+  a();
+}
+/*log({
+  greeting: 'Hello I am a on-the-fly object'
+});*/
+log(function() {
+  console.log('Hi I am a on-the-fly function');
+});
