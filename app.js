@@ -151,7 +151,7 @@ console.log(person.address);
 console.log(person.address.housenum);*/
 
 /*-----------------------------------------------------------*/
-/*Fake namespaces in JS example*/
+/*Fake namespaces in JS example
 var greet = "Hello";
 var greet = "Hola";
 console.log(greet);//If this line were run, Hola would display due to collision
@@ -174,4 +174,14 @@ console.log(english);
 console.log(english.greet);
 
 console.log(english.greetings);
-console.log(english.greetings.basic);
+console.log(english.greetings.basic);*/
+/*-----------------------------------------------------------*/
+/*Fake namespaces in JS example*/
+var objLiteral = {
+  firstname: "Chris",
+  isACoder: true
+}
+console.log(JSON.stringify(objLiteral));//makes objLiteral a JSON string
+//makes a string into JSON
+var jsonValue = JSON.parse('{"firstname": "Chris","isACoder": true }');
+  console.log(jsonValue);
