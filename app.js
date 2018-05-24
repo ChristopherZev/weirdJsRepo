@@ -95,6 +95,8 @@ greet();*/
 /*Lib and framework collision example
 console.log(libName);*/
 
+/*-----------------------------------------------------------*/
+/*Object and prop example
 var person = new Object();
 person["firstname"] = "Chris";
 person["lastname"] = "Zev";
@@ -113,4 +115,37 @@ person.food.name = "Sushi";
 
 //You can call like:
 console.log(person.food.country);
-console.log(person["food"]["country"]);
+console.log(person["food"]["country"]);*/
+
+/*-----------------------------------------------------------*/
+/*Obj Obj literal example*/
+
+var person = {
+  firstname: "Chris",
+  lastname: "Zev",
+  food: {
+    country:"Japan",
+    type:"Fish",
+    name:"Sushi"
+  }
+};
+
+function greet(person) {
+  console.log("Hi "+ person.firstname);
+}
+console.log(person);
+greet(person);
+//Adding an object literal at time of calling function
+//It displays Hi John
+greet({
+  firstname: "John",
+  lastname: "Smith"
+});
+//Add a new property to the person via dot notation and use it
+//to define as an object using obj literal
+person.address = {
+  street: "Lincoln Street",
+  housenum: "123"
+}
+console.log(person.address);
+console.log(person.address.housenum);
