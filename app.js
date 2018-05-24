@@ -176,7 +176,7 @@ console.log(english.greet);
 console.log(english.greetings);
 console.log(english.greetings.basic);*/
 /*-----------------------------------------------------------*/
-/*Fake namespaces in JS example*/
+/*JSON/Object literals in JS example
 var objLiteral = {
   firstname: "Chris",
   isACoder: true
@@ -184,4 +184,13 @@ var objLiteral = {
 console.log(JSON.stringify(objLiteral));//makes objLiteral a JSON string
 //makes a string into JSON
 var jsonValue = JSON.parse('{"firstname": "Chris","isACoder": true }');
-  console.log(jsonValue);
+  console.log(jsonValue);*/
+
+  /*-----------------------------------------------------------*/
+  /*Functions are objects in JS example*/
+  function greet() {
+    console.log('Hi');
+  }
+  greet.lang = 'English';//adds a prop to a func
+  console.log(greet);//outputs the func itself
+  console.log(greet.lang);//outputs the prop value
