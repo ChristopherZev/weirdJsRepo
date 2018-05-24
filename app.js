@@ -118,7 +118,7 @@ console.log(person.food.country);
 console.log(person["food"]["country"]);*/
 
 /*-----------------------------------------------------------*/
-/*Obj Obj literal example*/
+/*Obj Obj literal example
 
 var person = {
   firstname: "Chris",
@@ -148,4 +148,30 @@ person.address = {
   housenum: "123"
 }
 console.log(person.address);
-console.log(person.address.housenum);
+console.log(person.address.housenum);*/
+
+/*-----------------------------------------------------------*/
+/*Fake namespaces in JS example*/
+var greet = "Hello";
+var greet = "Hola";
+console.log(greet);//If this line were run, Hola would display due to collision
+
+//containing objects, for use to avoid collision
+//Might want to set the english containing object to have an object in it
+// to add more layers to the container object
+var english = {
+  greetings: {
+    basic: "Hello Basic"
+  }
+
+};
+var spanish = {};
+
+english.greet = "Hello";
+spanish.greet = "Hola";
+
+console.log(english);
+console.log(english.greet);
+
+console.log(english.greetings);
+console.log(english.greetings.basic);
