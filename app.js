@@ -209,11 +209,12 @@ var anonymousGreet = function() {
 anonymousGreet();
 
 function log(a) {
-  a();
+  a(); //tells eng
 }
 /*log({
   greeting: 'Hello I am a on-the-fly object'
 });*/
+//first class functions-functional programming
 log(function() {
   console.log('Hi I am a on-the-fly function');
 });
