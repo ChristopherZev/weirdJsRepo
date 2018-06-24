@@ -198,7 +198,7 @@ var jsonValue = JSON.parse('{"firstname": "Chris","isACoder": true }');
   /*-----------------------------------------------------------*/
   /*Function statement/expressions in JS example*/
 //function statement
-greet();
+/*greet();
 function greet() {
   console.log('hi I have a name');
 }
@@ -213,8 +213,10 @@ function log(a) {
 }
 /*log({
   greeting: 'Hello I am a on-the-fly object'
-});*/
+});
 //first class functions-functional programming
 log(function() {
   console.log('Hi I am a on-the-fly function');
-});
+});*/
+/*-----------------------------------------------------------*/
+/*By Value vs By reference*/
